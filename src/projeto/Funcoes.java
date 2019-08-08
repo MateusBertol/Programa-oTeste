@@ -1,11 +1,10 @@
 package projeto;
 
 /*
-autor: Jonas Dhein
+autor: Mateus Bertol
 */
 
 public class Funcoes {
-    
     //método que soma 2 números
     /*
         modificador de acesso (public, private)
@@ -16,10 +15,8 @@ public class Funcoes {
     */
     public static int somarNumeros(int valor1, int valor2){
         int resultado = valor1 + valor2;
-          
         return resultado;
     }
-    
     //Somar números de um array de inteiros
     public static int somarNumeros(int[] numeros){
         int resultado = 0;
@@ -28,7 +25,6 @@ public class Funcoes {
         }
         return resultado;
     }
-    
     public static int multiplicaNumeros(int[] numeros){
         int resultado = 1;
         for(int var : numeros){
@@ -36,7 +32,6 @@ public class Funcoes {
         }
         return resultado;
     }
-    
     public static double divideNumeros(int[] vetor){
         double resultado = vetor[0];
         for(int x = 1; x < vetor.length; x++){
@@ -44,7 +39,6 @@ public class Funcoes {
         }
         return resultado;
     }
-    
     public static int subtraiNumeros(int[] vetor){
         int resultado = vetor[0];
         for(int x = 1; x < vetor.length; x++){
@@ -52,12 +46,10 @@ public class Funcoes {
         }
         return resultado;
     }
-    
     public int subtrairNumeros(int valor1, int valor2){
         int resultado = valor1 - valor2;
         return resultado;
     }
-    
     public static String sortearNumeros(int quantidade, int maximo){
         String resultado = "";
         int numero = 0;
@@ -65,7 +57,6 @@ public class Funcoes {
             numero = (int) (Math.random() * maximo) + 1;
             resultado += numero + ",";
         }
-        
         //a linha de código a seguir remove a última virgula da String
         resultado = resultado.substring(0, resultado.length() - 1);
         return resultado;
