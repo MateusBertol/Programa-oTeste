@@ -9,7 +9,24 @@ public class RevisaoJava {
     //método de inicialização da classe
     public static void main(String[] args) {
         
-        System.out.println("Olá Mundo");
+        Pessoa pessoa1 = new Pessoa();
+        Pessoa pessoa2 = new Pessoa();
+        
+        pessoa1.setCidade("Nova Bréscia");
+        pessoa1.setCodigo(123);
+        pessoa1.setTelefone(323232332);
+        pessoa1.setNome("Mateus");
+        pessoa2.setCidade("Lajeado");
+        pessoa2.setCodigo(321);
+        pessoa2.setTelefone(544484155);
+        pessoa2.setNome("Lucas");
+        
+        System.out.println("Seu Nome é " + pessoa1.getNome() + ", seu código é " + pessoa1.getCodigo() +
+                ", seu telefone é " + pessoa1.getTelefone()  + " e sua cidade é " + pessoa1.getCidade() + ".\n");
+        System.out.println("Seu Nome é " + pessoa2.getNome() + ", seu código é " + pessoa2.getCodigo() +
+                ", seu telefone é " + pessoa2.getTelefone()  + " e sua cidade é " + pessoa2.getCidade() + ".\n");
+        
+        System.out.println("Olá Mundo\n");
         int resultado = Funcoes.somarNumeros(1, 2);
         System.out.println("Resultado = " + resultado);
         
